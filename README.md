@@ -47,10 +47,88 @@ pause
 
 
 
-0.00%,yespowerurx,CPU
-0.65%,"ethash, etchash",AMD / NVIDIA / Intel GPU
-0.85%,"kawpow, fishhash, randomx, verushash, autolykos2",CPU / GPU
-1.00%,"blake3_decred, sha256d_csd, rinhash, randomalpha",CPU / GPU
-1.50%,"xelishashv3, qhash",CPU / GPU
-2.00%,"flex, noid, pearlhash, quantus",CPU / GPU
-3.00%,"argon2id_exfer, xhash",CPU / GPU
+# ⚡ Supported Algorithms & Hardware Compatibility
+
+An overview of all algorithms supported by **SRBMiner-MULTI**, including developer fee structures, dual-mining matrix, and device support.
+
+---
+
+## 📊 Overview Matrix
+
+| Device Type | Symbol | Support Status |
+| :--- | :---: | :--- |
+| **CPU** | `C` | AMD Ryzen, Intel Core, ARM, EPYC, Xeon |
+| **AMD GPU** | `A` | RX 9xxx, 7xxx, 6xxx, 5xxx, VEGA, RX 4xx/5xx, BC-250 |
+| **NVIDIA GPU** | `N` | Blackwell, Hopper, Ada Lovelace, Ampere, Turing, Pascal |
+| **Intel GPU** | `I` | Battlemage, Alchemist |
+
+---
+
+## 💸 DevFee & Algorithm List
+
+> 💡 **DevFee Range:** Fees range from **0.00%** to **3.00%** depending on algorithm complexity and optimization level.
+
+### 🟢 Low Fee (0.00% – 0.85%)
+
+| Fee | Algorithm | CPU | AMD | NVIDIA | Intel |
+| :---: | :--- | :---: | :---: | :---: | :---: |
+| `0.00%` | **yespowerurx** | 🟢 | 🔴 | 🔴 | 🔴 |
+| `0.65%` | **etchash** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `0.65%` | **ethash** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `0.85%` | **argon2d_16000** | 🟢 | 🟢 | 🔴 | 🔴 |
+| `0.85%` | **argon2d_dynamic** | 🟢 | 🟢 | 🔴 | 🔴 |
+| `0.85%` | **cpupower** | 🟢 | 🔴 | 🔴 | 🔴 |
+| `0.85%` | **cryptonight_gpu** | 🟢 | 🟢 | 🟢 | 🟢 |
+| `0.85%` | **cryptonight_turtle** | 🟢 | 🟢 | 🟢 | 🔴 |
+| `0.85%` | **curvehash** | 🟢 | 🟢 | 🔴 | 🔴 |
+| `0.85%` | **evrprogpow** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `0.85%` | **firopow** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `0.85%` | **fishhash** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `0.85%` | **ghostrider** | 🟢 | 🔴 | 🔴 | 🔴 |
+| `0.85%` | **heavyhash** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `0.85%` | **kawpow** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `0.85%` | **meowpow** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `0.85%` | **randomx** | 🟢 | 🔴 | 🔴 | 🔴 |
+| `0.85%` | **verushash** | 🟢 | 🔴 | 🔴 | 🔴 |
+
+---
+
+### 🟡 Medium Fee (1.00% – 1.50%)
+
+| Fee | Algorithm | CPU | AMD | NVIDIA | Intel |
+| :---: | :--- | :---: | :---: | :---: | :---: |
+| `1.00%` | **autolykos2** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `1.00%` | **blake3_decred** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `1.00%` | **randomalpha** | 🟢 | 🔴 | 🔴 | 🔴 |
+| `1.00%` | **randomy** | 🟢 | 🔴 | 🔴 | 🔴 |
+| `1.00%` | **rinhash** | 🟢 | 🔴 | 🔴 | 🔴 |
+| `1.00%` | **sha256d_csd** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `1.00%` | **verthash** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `1.50%` | **qhash** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `1.50%` | **xelishashv3** | 🟢 | 🟢 | 🟢 | 🟢 |
+
+---
+
+### 🔴 High Fee (2.00% – 3.00%)
+
+| Fee | Algorithm | CPU | AMD | NVIDIA | Intel |
+| :---: | :--- | :---: | :---: | :---: | :---: |
+| `2.00%` | **blake3_an** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `2.00%` | **flex** | 🟢 | 🔴 | 🔴 | 🔴 |
+| `2.00%` | **noid** | 🔴 | 🟢 | 🟢 | 🔴 |
+| `2.00%` | **pearlhash** | 🔴 | 🟢 | 🟢 | 🔴 |
+| `2.00%` | **quantus** | 🔴 | 🟢 | 🟢 | 🟢 |
+| `3.00%` | **argon2id_exfer** | 🟢 | 🟢 | 🟢 | 🔴 |
+| `3.00%` | **xhash** | 🔴 | 🟢 | 🟢 | 🟢 |
+
+---
+
+## 🔀 Dual Mining Combinations
+
+SRBMiner-MULTI allows simultaneous mining of memory-hard and core-heavy algorithms:
+
+```text
+├── Primary: Fishhash      ──►  Secondary: Qhash / Blake3_Decred
+├── Primary: Autolykos2    ──►  Secondary: Qhash / Blake3_Decred / Heavyhash
+├── Primary: Etchash/Ethash──►  Secondary: Blake3_Decred / Heavyhash
+└── Primary: Xhash         ──►  Secondary: Qhash / Blake3_Decred
