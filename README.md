@@ -44,3 +44,13 @@ cd /d %~dp0
 :: Example startup command for SRBMiner-MULTI
 SRBMiner-MULTI.exe --config ..\configs\dual-mine-fishhash.json
 pause
+
+
+
+0.00%,yespowerurx,CPU
+0.65%,"ethash, etchash",AMD / NVIDIA / Intel GPU
+0.85%,"kawpow, fishhash, randomx, verushash, autolykos2",CPU / GPU
+1.00%,"blake3_decred, sha256d_csd, rinhash, randomalpha",CPU / GPU
+1.50%,"xelishashv3, qhash",CPU / GPU
+2.00%,"flex, noid, pearlhash, quantus",CPU / GPU
+3.00%,"argon2id_exfer, xhash",CPU / GPU
