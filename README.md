@@ -1,3 +1,13 @@
+# ⚡ SRBMiner-MULTI Custom Configuration & Setup Guide
+
+![SRBMiner-MULTI Cover](https://repository-images.githubusercontent.com/207241702/27f92d80-e6c8-11e9-9081-158ee113177d)
+
+![Hardware Support](https://img.shields.io/badge/Hardware-AMD%20%7C%20NVIDIA%20%7C%20Intel%20%7C%20CPU-blue)
+![Mining Modes](https://img.shields.io/badge/Mining-Multi--Algo%20%26%20Dual--Mine-brightgreen)
+![OS Compatibility](https://img.shields.io/badge/OS-Windows%20%7C%20Linux-orange)
+
+
+
 # ⚡ SRBMiner-MULTI Setup & Configurations
 
 A high-performance configuration and startup repository for **SRBMiner-MULTI** — supporting multi-algorithm and dual-mining on AMD, NVIDIA, Intel GPUs, and CPUs.
